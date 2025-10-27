@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Rock Irado</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Rock Irado</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Carrinho</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="product-gallery">
+            <div class="product-item">
+                <img src="camiseta.jpg" alt="Camiseta Rock">
+                <h3>Camiseta Rock Clássica</h3>
+                <p>R$ 89,90</p>
+                <button onclick="addToCart('Camiseta Rock Clássica', 89.90)">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="product-item">
+                <img src="camiseta.jpg" alt="Camiseta Rock">
+                <h3>Camiseta Rock Clássica</h3>
+                <p>R$ 89,90</p>
+                <button onclick="addToCart('Camiseta Rock Clássica', 89.90)">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="product-item">
+                <img src="jaqueta.jpeg" alt="Jaqueta Rock">
+                <h3>Jaqueta de Couro Rock</h3>
+                <p>R$ 249,90</p>
+                <button onclick="addToCart('Jaqueta de Couro Rock', 249.90)">Adicionar ao Carrinho</button>
+            </div>
+
+            <!-- Novos itens adicionados -->
+            <div class="product-item">
+                <img src="bone.jpg" alt="Boné Rock">
+                <h3>Boné Rock Irado</h3>
+                <p>R$ 49,90</p>
+                <button onclick="addToCart('Boné Rock Irado', 49.90)">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="product-item">
+                <img src="cd.jpg" alt="CD Rock">
+                <h3>CD Coletânea Rock</h3>
+                <p>R$ 29,90</p>
+                <button onclick="addToCart('CD Coletânea Rock', 29.90)">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="product-item">
+                <img src="poster.jpg" alt="Poster Rock">
+                <h3>Pôster Banda Clássica</h3>
+                <p>R$ 19,90</p>
+                <button onclick="addToCart('Pôster Banda Clássica', 19.90)">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="product-item">
+                <img src="caneca.jpg" alt="Caneca Rock">
+                <h3>Caneca Rock Irado</h3>
+                <p>R$ 39,90</p>
+                <button onclick="addToCart('Caneca Rock Irado', 39.90)">Adicionar ao Carrinho</button>
+            </div>
+        </section>
+
+        <div class="cart">
+            <h2>Itens no Carrinho</h2>
+            <ul id="cart-items"></ul>
+            <p id="total-price">Total: R$ 0,00</p>
+        </div>
+
+        <div class="product-item">
+                <img src="adesivo.jpg" alt="Adesivo Rock">
+                <h3>Kit Adesivos Rock</h3>
+                <p>R$ 9,90</p>
+                <button onclick="addToCart('Kit Adesivos Rock', 9.90)">Adicionar ao Carrinho</button>
+            </div>
+
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Loja Rock Irado. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
